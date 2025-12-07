@@ -75,7 +75,7 @@ const Hero = () => {
 
                 <motion.p
                     {...fadeInUp}
-                    transition={{ delay: 0.3 }} className={`text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 ${delicious.className}`}>Full Stack Developer | UI / UX Enthusiast
+                    transition={{ delay: 0.3 }} className={`text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 ${delicious.className}`}>Full Stack Developer | UI / UX Enthusiast | Microsoft Power Platform
                 </motion.p>
                 <motion.div
                     {...fadeInUp}
@@ -132,7 +132,7 @@ const Hero = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <a
-                            href="/rohith_resume.pdf"
+                            href="/rohith_resume_12.pdf"
                             download
                             className='inline-block w-full bg-gray-400  md:w-auto text-gray-800 dark:text-white px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors'>
                             Download Resume

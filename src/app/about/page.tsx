@@ -5,6 +5,7 @@ import { Pacifico, Delicious_Handrawn } from "next/font/google";
 import { FaTools } from 'react-icons/fa'
 import { GiPaintBrush } from 'react-icons/gi';
 import { ServerStackIcon } from '@heroicons/react/24/outline';
+import { GoWorkflow } from "react-icons/go";
 import { motion } from 'framer-motion'
 import {
   fadeInUp,
@@ -36,8 +37,9 @@ const About = () => {
         {...fadeInUp}
       >
         <p className='text-lg text-secondary max-w-3xl mx-auto text-center mb-4'>
-          I&apos;m a full-stack developer with a strong focus on frontend development using React and Tailwind CSS.
-          I enjoy crafting responsive, clean, and user-friendly interfaces, backed by solid MERN stack experience.
+         I&apos;m a full-stack developer focused on building clean, responsive interfaces using React and Tailwind CSS, 
+         backed by MERN stack expertise. I also work with the Microsoft Power Platform to create low-code apps and 
+         automate workflows that solve real business problems.
         </p>
 
         <p className='text-lg text-secondary max-w-3xl mx-auto text-center mb-4'>
@@ -65,7 +67,7 @@ const About = () => {
         >
 
           <motion.div
-            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/70 to-purple-800 shadow-lg"
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg"
             variants={fadeInUp}
             {...cardHover}
           >
@@ -83,7 +85,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/70 to-purple-800 shadow-lg"
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg"
             variants={fadeInUp}
             {...cardHover}
           >
@@ -98,7 +100,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/70 to-purple-800 shadow-lg"
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg"
             variants={fadeInUp}
             {...cardHover}
           >
@@ -111,16 +113,33 @@ const About = () => {
               </ul>
             </div>
           </motion.div>
+
+          <motion.div
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg"
+            variants={fadeInUp}
+            {...cardHover}
+          >
+            <div className="bg-white dark:bg-dark/70 backdrop-blur-md p-6 rounded-xl h-full">
+              <h3 className={`${pacifico.className} text-2xl font-semibold mb-4 flex text-primary`}> <GoWorkflow className="h-8 w-8 me-2" />MS Power Platform</h3>
+              <ul className="text-secondary space-y-2 dark:text-gray-300">
+                <li>Power Automate</li>
+                <li>Power Apps</li>
+                <li>Microsoft Dataverse</li>
+              </ul>
+            </div>
+          </motion.div>
+
         </motion.div>
       </motion.section>
 
-      {/* <motion.section
+      {/* Experience Section */}
+      <motion.section
         className="mb-16"
         {...fadeIn}
         transition={{ delay: 0.4 }}
       >
         <motion.h2
-          className={`text-primary ${delicious.className} section-title`}
+          className={`text-primary ${delicious.className} section-title text-4xl`}
           {...fadeInUp}
         >
           Experience
@@ -132,23 +151,22 @@ const About = () => {
           animate="animate"
         >
           <motion.div
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg"
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold mb-2">Senior Full Stack Developer</h3>
-            <p className="text-primary mb-2">Company Name • 2020 - Present</p>
-            <ul className="text-secondary list-disc list-inside space-y-2">
-              <li>Led development of multiple web applications using React and Node.js</li>
-              <li>Implemented CI/CD pipelines reducing deployment time by 50%</li>
-              <li>Mentored junior developers and conducted code reviews</li>
-            </ul>
+            <div className="bg-white dark:bg-dark/70 backdrop-blur-md p-6 rounded-xl h-full">
+              <h3 className="text-xl font-semibold mb-2">Full Stack Developer Intern</h3>
+              <p className="text-primary mb-2">TechSmew Innovations • September 2025 - Present</p>
+              <ul className="text-secondary dark:text-gray-300 list-disc list-inside space-y-2">
+                <li>Working on the Microsoft Power Platform using Power Apps, Power Automate, and Dataverse.</li>
+                <li>Developing and modifying low-code applications, multi-level approval workflows, and automation processes.</li>
+                <li>Collaborating in Agile sprints, handling bug fixes, testing, and configuring and optimizing workflows for better efficiency.</li>
+              </ul>
+            </div>
           </motion.div>
-
-          
-
-    </motion.div>
-      </motion.section > */}
+        </motion.div>
+      </motion.section>
 
       {/* Education Section */}
       <motion.section
@@ -168,7 +186,7 @@ const About = () => {
           animate="animate"
         >
           <motion.div
-            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/70 to-purple-800 shadow-lg mb-5"
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg mb-5"
             variants={fadeInUp}
             {...cardHoverSmall}
           >
@@ -184,7 +202,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/70 to-purple-800 shadow-lg"
+            className="p-[1px] rounded-xl bg-gradient-to-br from-primary/40 to-purple-900 shadow-lg"
             variants={fadeInUp}
             {...cardHoverSmall}
           >
